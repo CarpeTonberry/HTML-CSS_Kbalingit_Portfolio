@@ -1,139 +1,247 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* WHAT IS THIS */
     margin: 0;
     padding: 0;
 }
 
 body {
-    color:blue;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.flex-row {
-    display: flex;
+    max-width: 1200px;
+    min-width: 414px;
+    /*margin 10px; = margin: 10px 10px 10px 10px                      margin 0 auto = margin 0 auto 0 auto*/
+    margin: 0 auto;
+    /* main txt colors */
+    color: orange;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header start */
 header {
     padding: 20px 35px;
-    background-color:black;
-    display:flex;
+    background-color: black;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    /* innsert background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     z-index: 9999;
-}
-
-header h1 {
+  }
+  
+  header h1 a {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
-    text-shadow: 0 0 10px black;
-}
+    font-size: 32px;
+    color: pink;
+  }
 
-header a {
-    text-decoration: none; /***** what is this *****/
-    color: yellow;
-}
-
-header nav {
+  header h1 a:hover {
+      color:red;
+      text-decoration: underline overline double green;
+  }
+  
+  header nav {
     margin: 7px 0;
-}
-
-header nav ul {
+  }
+  
+  header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    /* this will get rid of bullet point */
     list-style: none;
-}
+  }
 
-header nav ul li a {
+  header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px black /***** check out the ending of text-shadow *****/
-}
+    color: red;
+    background-color: burlywood;
+  }
 
-header nav ul li a:hover {
-    background: green;
-    color:purple;
+  header nav ul li a:hover {
+    background: blue;
+    color: yellow;
     border-radius: 15px;
     text-shadow: none;
-}
+  }
 /* header end */
 
-/* about me start */
-.about-me p {
-    line-height: 1.7;
-    color: orange;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-}
-/* about me end 
+/* nav elements start */
+/* nav elements end */
 
-/* work start */
-.Portfolio {
-    width: 100%;
-    margin: 0 auto;
+/* about me start */
+.about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding-top: 15px;
+} 
+ 
+.block-txt {
+    width: 100%;
+    background-color: rgb(89, 0, 255);
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+/* about me end */
+
+/* work start */
+.work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    background-color: grey;
+}
+
+.section-header h2 {
+    background-color: purple;
+    color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .work-tiles {
-    /* this margin changes the space between boxes */
-    margin: 20px;
+    margin: 10px; 
     flex: 1;
     color: blue;
 }
 
-.work-tiles img {
+.work-tiles img { 
     width: 100%;
-    height: 100%;
-    flex: 1 12%;
-    position: sticky;
-    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 50%;
+}
+
+.work-tiles img:hover {
+    opacity: 100%;
 }
 
 .work-tile-bio {
-    padding: 15px;
-    line-height: 1.3;
-    position: absolute;
-    border: 3px solid black; 
-    background: red;
+    position: relative;
+    margin: auto 20%;
+    color: chartreuse;
+    background-color: red;
+    border: 3px solid #000000;
 }
 
-.work-tile-bio h3 {
-    font-size: 28px;
+.work-tile-names {
+    display: flex;
+    justify-content: center;
+    font-size: 2.0vw;
 }
 
-.work-tile-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
+.work-tile-code {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5vw;
 }
 /* work end */
 
-.flex-row {
+/* contact start */
+.contact {
     display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    margin-bottom: 15px;
 }
 
-.resume embed {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+.block-txt-2 {
+    background-color: black;
+    margin-right: 1%;
+}
+/* contact end */
+
+ /* resume start  */
+ .section-header-resume {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 15px;
+ }
+
+ a {
+    text-decoration: none;
+    color: rgb(47, 245, 255);
+}
+
+ .section-header-resume a:hover {
+     color:red;
+     padding: 5px 25%;
+     border: groove 3px red;
+     border-radius: 15px;
+     background-color: blue;
+ }
+  /* resume end */
+
+/* footer start */
+.footer h2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
+    background-color: brown;
+}
+/* footer end */
+
+@media screen and (min-width: 1200px) {
+    .work-tile-names {
+        font-size: 24px;
+    }
+
+    .work-tile-code {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .work-tiles {
+        flex: 0 70%;
+    }
+    
+    .portfolio {
+        justify-content: center;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .work-tile-names {
+        font-size: 3.0vw;
+    }
+
+    .work-tile-code {
+        font-size: 2.5vw;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block-txt-2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-right: auto;
+    }
 }

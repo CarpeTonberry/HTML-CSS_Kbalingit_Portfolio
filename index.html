@@ -1,119 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Kyle Balingit's Portfolio</title>
-    </head>
-    <body>
-        <!-- navigation tags start -->
-        <header>
-            <h1>
-                <!-- link this to '/' when foler is linked to git hub-->
-                <a href="">Kyle Balingit's Portfolio</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- nagivation tags end-->
 
-        <!-- about me start-->
-        <section id="about-me" class="about-me">
-            <div class="flex-row">
-                <h2>
-                    About Me
-                </h2>
-            </div>
-            <div class="flex-row">
-                <p>
-                    Hello and welcome to my portfolio site! As time goes on, this site will improve. Sit back, and enjoy the program! 
-                </p>
-            </div>
-        </section>
-        <!-- about me end-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kyle Balingit's Portfolio</title>
+</head>
 
-        <!-- work start -->
-        <section id="work">
-            <div class="flex-row">
-                <h2>
-                    Work
-                </h2>
-            </div>
+<body>
 
-            <div class="Portfolio">
-                <article class="work-tiles">
-                    <div class="work-tile-bio">
-                        <h3 class="work-tile-names">Run Buddy</h3>
-                        <h4 class="work-tile-code">HTML and CSS</h4>
-                    </div>
-                    <img src="./assets/images/run_buddy.png" alt="" />
-                </article>
+    <!-- navigation tags start -->
+    <header>
+        <h1>
+            <a href="/">Kyle Balingit's Portfolio</a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- nagivation tags end -->
 
-                <article class="work-tiles">
-                    <div class="work-tile-bio">
-                        <h3 class="work-tile-names">Horiseon</h3>
-                        <h4 class="work-tile-code">HTML and CSS</h4>
-                    </div>
-                    <img src="./assets/images/Horiseon.png" alt="" />
-                </article>
-
-                <article class="work-tiles">
-                    <div class="work-tile-bio">
-                        <h3 class="work-tile-names">Robot Gladiators</h3>
-                        <h4 class="work-tile-code">JSS</h4>
-                    </div>
-                    <img src="./assets/images/robot_gladiators.jpg" alt="" />
-                </article>
-            </div>
-        </section>
-        <!-- work end -->
-
-        <!-- contact start -->
-        <section id="contact">
-            <div class="flex-row">
-                <h2>
-                    Contact
-                </h2>
-            </div>
-            <div class="flex-row">
-                <p>
-                    Call me beep me if you want to reach me at 555-555-5555
-                </p>
-            </div>
-        </section>
-        <!-- contact end-->
-
-        <!-- resume -->
-        <section id="resume">
-            <div class="flex-row">
-                <h2>
-                    Resume
-                </h2>
-                <embed src="./assets/images/Kyle_Balingits_Resume.pdf">
-            </div>
-        </section>
-        <!-- resume end-->
-
-        <!-- footer -->
-        <footer>
+    <!-- about me start -->
+    <section id="about-me" class="about-me">
+        <div class="section-header">
             <h2>
-                Made with Love by CarpeTonberry
+                About Me
             </h2>
-        </footer>
-    </body>
+        </div>
+
+        <div class="block-txt">
+            <p>
+                Hello and welcome to my portfolio site! As time goes on, this site will improve. Sit back, and enjoy the
+                program!
+            </p>
+        </div>
+    </section>
+    <!-- about me end -->
+
+    <!-- work start -->
+    <section id="work" class="work">
+        <div class="section-header">
+            <h2>
+                Work
+            </h2>
+        </div>
+        <div class="portfolio">
+            <article class="work-tiles">
+                <div class="work-tile-bio">
+                    <h3 class="work-tile-names">Run Buddy</h3>
+                    <h4 class="work-tile-code">HTML and CSS</h4>
+                </div>
+                <a href="https://carpetonberry.github.io/run-buddy/" target="_blank">
+                    <img src="./assets/images/run_buddy.png" alt="" />
+                </a>
+            </article>
+
+            <article class="work-tiles">
+                <div class="work-tile-bio">
+                    <h3 class="work-tile-names">Horiseon</h3>
+                    <h4 class="work-tile-code">HTML and CSS</h4>
+                </div>
+                <a href="https://carpetonberry.github.io/HTML-CSS_Refactor_Code_Horiseon/" target="_blank">
+                    <img src="./assets/images/Horiseon.png" alt="" />
+                </a>
+            </article>
+
+            <article class="work-tiles">
+                <div class="work-tile-bio">
+                    <h3 class="work-tile-names">Robot Gladiators</h3>
+                    <h4 class="work-tile-code">JSS</h4>
+                </div>
+                <a href="https://carpetonberry.github.io/robot-gladiators/" target="_blank">
+                    <img src="./assets/images/robot_gladiators.jpg" alt="" />
+                </a>
+            </article>
+        </div>
+    </section>
+    <!-- work end -->
+
+    <!-- contact start -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>
+                Contact
+            </h2>
+        </div>
+
+        <div class="block-txt-2">
+            <p>
+                Call me beep me if you want to reach me at 555-555-5555
+            </p>
+        </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- resume start -->
+    <section id="resume">
+        <div class="section-header-resume">
+            <a href="./assets/images/Kyle_Balingits_Resume.pdf" target="_blank">
+                <h2>Resume</h2>
+            </a>
+        </div>
+    </section>
+    <!-- resume end-->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <h2>
+            ❤️ Made with Love by CarpeTonberry ❤️
+        </h2>
+    </footer>
+    <!-- footer end  -->
+</body>
+
 </html>
