@@ -73,6 +73,11 @@ header {
 /* header end */
 
 /* about me start */
+.profile-pic {
+    margin-left: 25%;
+    width: 50%;
+}
+
 .about-me {
     display: flex;
     flex-wrap: wrap;
