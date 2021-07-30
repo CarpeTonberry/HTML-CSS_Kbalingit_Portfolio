@@ -1,3 +1,22 @@
-# kbalingit_portfolio
+# Kyle Balingit's Portfolio [HTML/CSS]
 
-This is a working project to build my portfolio. It's not much to look atm but give it time and it will become something that will make the world a better place. 
+The purpose of this webpage is to outline the various coding acomplishments of Kyle Balingit. However this site can be used as a template for anyone! Just pop in your own links and relevant information and you'll be good to go! This page was built for the purpose of keeping the elements centered (with a few elements colapsing from the right). The site is also mobile friendly and should like presentable on any phone screen / dektop screen. 
+
+## Best Ways to Customize 
+
+-In index.html, you'll find each section broken out by HTML <--comments-->
+-The CSS sheet has various variables listed in :root that will change the various color elements without going into individual lines.
+
+![alt text](./assets/images/css_variables)
+
+-Layouts will not be easily customizable and will require tinkering, but then why are you using my sheet if you have the know-how
+
+## Screenshot of Application
+
+![alt text](./assets/images/desktop_layout)
+
+![alt text](./assets/images/mobile_layout)
+
+## TL:DR
+
+HTML + CSS = ❤️️

@@ -1,5 +1,14 @@
+:root {
+    --mainBackgroundColor: rgb(117, 19, 117);
+    --workTilePlaqTxt: black;
+    --workTilePlaqBack: rgb(46, 202, 49);
+    --linkableTxt: rgb(53, 145, 210);
+    --hoverBack: rgb(46, 202, 49);
+    --hoverTxt: black;   
+}
+
 * {
-    box-sizing: border-box; /* WHAT IS THIS */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -7,18 +16,16 @@
 body {
     max-width: 1200px;
     min-width: 414px;
-    /*margin 10px; = margin: 10px 10px 10px 10px                      margin 0 auto = margin 0 auto 0 auto*/
     margin: 0 auto;
-    /* main txt colors */
     color: black;
-    background-color: rgb(117, 19, 117);
+    background-color: var(--mainBackgroundColor);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header start */
 header {
     padding: 20px 35px;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,11 +37,11 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 32px;
-    color: rgb(53, 145, 210);
+    color: var(--linkableTxt);
   }
 
   header h1 a:hover {
-      color:black;
+      color:var(--hoverTxt);
       text-decoration: underline overline double rgb(22, 163, 59);
   }
   
@@ -47,27 +54,23 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* this will get rid of bullet point */
     list-style: none;
   }
 
   header nav ul li a {
     padding: 10px 15px;
-    color: rgb(53, 145, 210);
+    color: var(--linkableTxt);
     font-weight: bold;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
   }
 
   header nav ul li a:hover {
-    background: rgb(46, 202, 49);
-    color: black;
+    background: var(--hoverBack);
+    color: var(--hoverTxt);
     border-radius: 15px;
     text-shadow: none;
   }
 /* header end */
-
-/* nav elements start */
-/* nav elements end */
 
 /* about me start */
 .about-me {
@@ -75,13 +78,13 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     padding-top: 15px;
 } 
  
 .block-txt {
     width: 100%;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -96,11 +99,11 @@ header {
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
 }
 
 .section-header h2 {
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     color: rgb(22, 163, 59);
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +116,7 @@ header {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -121,7 +124,7 @@ header {
 .work-tiles-main {
     justify-content: center;
     margin: 10px; 
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
 }
 
 .work-tiles-main img {
@@ -136,7 +139,7 @@ header {
 .work-tiles {
     margin: 10px; 
     flex: 1;
-    color:  rgb(117, 19, 117);
+    color:  var(--mainBackgroundColor);
 }
 
 .work-tiles img { 
@@ -153,8 +156,8 @@ header {
 .work-tile-bio {
     position: relative;
     margin: auto 20%;
-    color: black;
-    background-color: rgb(46, 202, 49);
+    color: var(--workTilePlaqTxt);
+    background-color: var(--workTilePlaqBack);
     border: 3px solid #000000;
 }
 
@@ -175,20 +178,20 @@ header {
 .contact {
     display: flex;
     justify-content: space-between;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
     margin-bottom: 15px;
 }
 
 .block-txt-2 {
     padding: 10px 15px;
-    background-color:  rgb(117, 19, 117);
-    color: rgb(53, 145, 210);
+    background-color:  var(--mainBackgroundColor);
+    color: var(--linkableTxt);
     font-weight: bold;
 }
 
 .block-txt-2 a:hover {
-    background: rgb(46, 202, 49);
-    color: black;
+    background: var(--hoverBack);
+    color: var(--hoverTxt);
     padding: 10px 15px; 
     border-radius: 15px;
     text-shadow: none;
@@ -211,32 +214,29 @@ header {
 
  a {
     text-decoration: none;
-    color: rgb(53, 145, 210);
+    color: var(--linkableTxt);
 }
 
  .section-header-resume a:hover {
-     color:black;
+     color: var(--hoverTxt);
      padding: 5px 25%;
      border: groove 3px black;
      border-radius: 15px;
-     background-color: rgb(46, 202, 49);
+     background-color: var(--hoverBack);
  }
   /* resume end */
 
-
-/* contact start */
-
-/* contact end */
 /* footer start */
 .footer h9 {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:  rgb(117, 19, 117);
+    background-color:  var(--mainBackgroundColor);
 }
 /* footer end */
 
+/* desktop screen size adjustments */
 @media screen and (min-width: 1200px) {
     .work-tile-names {
         font-size: 24px;
@@ -247,6 +247,7 @@ header {
     }
 }
 
+/* phone screen size adjustments */
 @media screen and (max-width: 769px) {
     .work-tiles {
         flex: 0 70%;
