@@ -10,15 +10,15 @@ body {
     /*margin 10px; = margin: 10px 10px 10px 10px                      margin 0 auto = margin 0 auto 0 auto*/
     margin: 0 auto;
     /* main txt colors */
-    color: orange;
-    background-color: black;
+    color: black;
+    background-color: rgb(117, 19, 117);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header start */
 header {
     padding: 20px 35px;
-    background-color: black;
+    background-color:  rgb(117, 19, 117);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,12 +30,12 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 32px;
-    color: pink;
+    color: rgb(53, 145, 210);
   }
 
   header h1 a:hover {
-      color:red;
-      text-decoration: underline overline double green;
+      color:black;
+      text-decoration: underline overline double rgb(22, 163, 59);
   }
   
   header nav {
@@ -53,13 +53,14 @@ header {
 
   header nav ul li a {
     padding: 10px 15px;
-    color: red;
-    background-color: burlywood;
+    color: rgb(53, 145, 210);
+    font-weight: bold;
+    background-color:  rgb(117, 19, 117);
   }
 
   header nav ul li a:hover {
-    background: blue;
-    color: yellow;
+    background: rgb(46, 202, 49);
+    color: black;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -74,13 +75,13 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color:  rgb(117, 19, 117);
     padding-top: 15px;
 } 
  
 .block-txt {
     width: 100%;
-    background-color: rgb(89, 0, 255);
+    background-color:  rgb(117, 19, 117);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -95,12 +96,12 @@ header {
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    background-color: grey;
+    background-color:  rgb(117, 19, 117);
 }
 
 .section-header h2 {
-    background-color: purple;
-    color: blue;
+    background-color:  rgb(117, 19, 117);
+    color: rgb(22, 163, 59);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -112,15 +113,30 @@ header {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    background-color: blueviolet;
+    background-color:  rgb(117, 19, 117);
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+.work-tiles-main {
+    justify-content: center;
+    margin: 10px; 
+    background-color:  rgb(117, 19, 117);
+}
+
+.work-tiles-main img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 50%;
+}    
+.work-tiles-main img:hover {
+        opacity: 100%;
+}
 .work-tiles {
     margin: 10px; 
     flex: 1;
-    color: blue;
+    color:  rgb(117, 19, 117);
 }
 
 .work-tiles img { 
@@ -137,8 +153,8 @@ header {
 .work-tile-bio {
     position: relative;
     margin: auto 20%;
-    color: chartreuse;
-    background-color: red;
+    color: black;
+    background-color: rgb(46, 202, 49);
     border: 3px solid #000000;
 }
 
@@ -159,13 +175,30 @@ header {
 .contact {
     display: flex;
     justify-content: space-between;
-    background-color: grey;
+    background-color:  rgb(117, 19, 117);
     margin-bottom: 15px;
 }
 
 .block-txt-2 {
-    background-color: black;
-    margin-right: 1%;
+    padding: 10px 15px;
+    background-color:  rgb(117, 19, 117);
+    color: rgb(53, 145, 210);
+    font-weight: bold;
+}
+
+.block-txt-2 a:hover {
+    background: rgb(46, 202, 49);
+    color: black;
+    padding: 10px 15px; 
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.block-txt-2 ul li {
+    list-style: none;
+    display: inline;
+    margin: 15px;
+    padding: 10px;
 }
 /* contact end */
 
@@ -178,24 +211,29 @@ header {
 
  a {
     text-decoration: none;
-    color: rgb(47, 245, 255);
+    color: rgb(53, 145, 210);
 }
 
  .section-header-resume a:hover {
-     color:red;
+     color:black;
      padding: 5px 25%;
-     border: groove 3px red;
+     border: groove 3px black;
      border-radius: 15px;
-     background-color: blue;
+     background-color: rgb(46, 202, 49);
  }
   /* resume end */
 
+
+/* contact start */
+
+/* contact end */
 /* footer start */
-.footer h2 {
+.footer h9 {
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: brown;
+    background-color:  rgb(117, 19, 117);
 }
 /* footer end */
 
