@@ -247,6 +247,14 @@ header {
     }
 }
 
+/* tablet screen size adjustments */
+@media screen and (max-width: 783px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /* phone screen size adjustments */
 @media screen and (max-width: 769px) {
     .work-tiles {
@@ -277,10 +285,25 @@ header {
     }
 
     .block-txt-2 {
-        display: flex;
         justify-content: center;
         text-align: center;
         width: 100%;
-        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 487px) {
+    .block-txt-2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    header nav ul {
+        justify-content: center;
+    }
+    header nav ul li {
+        margin: 10px;
     }
 }
